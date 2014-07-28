@@ -1,0 +1,121 @@
+body {
+  font-family: 'robotoregular';
+  padding-top: 14%!important;
+  padding-bottom: 14%!important;
+  font-size: 12px;
+  background: #f2f2f2;
+}
+body#mapa {
+  padding-top: 0!important;
+  padding-bottom: 0!important;
+}
+.main-title {
+  font-size: 28px;
+  color: #df863e;
+  border-bottom: 1px solid #df863e;
+  width: 95%;
+  position: relative;
+  left: 20px;
+  margin: 20px 0;
+}
+.title {
+  font-size: 24px;
+  font-weight: normal;
+}
+.logomarca {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  color: #fff;
+  padding-top: 1%;
+  padding-bottom: 3%;
+  text-transform: uppercase;
+}
+.logomarca img {
+  max-height: 100px;
+  width: 15%;
+  margin: 0px 0;
+  float: left;
+  position: relative;
+  top: 3px;
+}
+p {
+  margin-bottom: 5px;
+  font-size: 0.8rem;
+}
+.rodape {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.icons-top {
+  width: 60%;
+  float: right;
+  text-align: right;
+  margin: 0;
+  padding-top: 6px;
+  position: relative;
+  top: 10%;
+}
+.icons-top li {
+  list-style-type: none;
+  margin-left: 12%;
+  display: block;
+  float: left;
+  width: 12%;
+  line-height: 43px;
+}
+.icons-top li a {
+  line-height: 43px;
+}
+.icons-top li img {
+  width: 100%;
+}
+.tt-princ {
+  
+}
+.lista {
+  border: none!important;
+  margin-top: 0;
+}
+.lista-cada {
+  border: none;
+  background: #fff;
+  padding: 1%;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px #ccc;
+  color: #666;
+  height: 20%;
+  width: 98%!important;
+  margin: 0 auto!important;
+  margin-top: 10px!important;
+}
+address {
+  font-size: 18px;
+  font-style: normal;
+  line-height: 25px;
+}
+address strong {
+  font-weight: normal;
+}
+.item-image {
+  text-align: center;
+  padding: 0;
+}
+.lista-cada a {
+  color: #6C3E90;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: normal;
+}
+.lista-cada strong {
+  color: #6C3E90;
+  font-weight: bold;
+}
+.main {
+  height: 100%!important;
+}
+.box-map-voce {
+  height: 50px;
+}
