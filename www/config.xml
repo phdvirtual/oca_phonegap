@@ -26,7 +26,6 @@
 
     <gap:plugin name="org.apache.cordova.console" version="0.2.7" />
     <gap:plugin name="org.apache.cordova.dialogs" version="0.2.6" />
-    <gap:plugin name="org.apache.cordova.NetworkManager" version="0.2.7" />
     <gap:plugin name="org.apache.cordova.network-information" version="0.2.7" />
     <gap:plugin name="org.apache.cordova.geolocation" version="0.3.7" />
     <gap:plugin name="org.apache.cordova.globalization" version="0.2.6" />
