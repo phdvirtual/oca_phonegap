@@ -21,11 +21,12 @@
     <preference name="show-splash-screen-spinner" value="true" />
     <preference name="auto-hide-splash-screen" value="true" />
     <preference name="disable-cursor" value="false" />
-    <preference name="android-minSdkVersion" value="1" />
+    <preference name="android-minSdkVersion" value="3" />
     <preference name="android-installLocation" value="auto" />
 
     <gap:plugin name="org.apache.cordova.console" version="0.2.7" />
     <gap:plugin name="org.apache.cordova.dialogs" version="0.2.6" />
+    <gap:plugin name="org.apache.cordova.NetworkManager" version="0.2.7" />
     <gap:plugin name="org.apache.cordova.network-information" version="0.2.7" />
     <gap:plugin name="org.apache.cordova.geolocation" version="0.3.7" />
     <gap:plugin name="org.apache.cordova.globalization" version="0.2.6" />
