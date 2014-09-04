@@ -25,7 +25,7 @@ body#mapa {
 .logomarca {
   position: fixed;
   top: 0;
-  z-index: 1000;
+  z-index: 1001;
   width: 100%;
   color: #fff;
   padding-top: 1%;
@@ -73,7 +73,7 @@ p {
   width: 100%;
 }
 .tt-princ {
-  
+
 }
 .lista {
   border: none!important;
