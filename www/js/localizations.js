@@ -29,7 +29,6 @@ var app = {
 
         navigator.geolocation.getCurrentPosition(
           function(posicao) {
-              alert('Fabiana...');
               var pos = new google.maps.LatLng(posicao.coords.latitude, posicao.coords.longitude);
               my_lat = posicao.coords.latitude;
               my_long = posicao.coords.longitude;
@@ -94,6 +93,7 @@ var app = {
               }
 
           }// getCurrentPosition
+
         );
 
       })
