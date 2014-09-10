@@ -1,25 +1,24 @@
 var app = {
-    // Application Constructor
     initialize: function() {
         this.bindEvents();
     },
-    // Bind Event Listeners
-    //
-    // Bind any events that are required on startup. Common events are:
-    // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
         //this.onDeviceReady();// remove esta linha antes de publicar e desconmentar a de cima
     },
-    // deviceready Event Handler
-    //
-    // The scope of 'this' is the event. In order to call the 'receivedEvent'
-    // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function() {
+
+
 
       $.getJSON('http://oca-admin.herokuapp.com/clients/index.json', function(data){
 
         locations = data;
+
+
+      })
+      .done(function(){
+
+        console.log('Parabéns. A requisição foi feita com sucesso.')
 
         var image2 = "img/eu.png";
         var image = "img/icone.png";
@@ -32,6 +31,8 @@ var app = {
               var pos = new google.maps.LatLng(posicao.coords.latitude, posicao.coords.longitude);
               my_lat = posicao.coords.latitude;
               my_long = posicao.coords.longitude;
+              console.log(my_lat);
+              console.log(my_long);
 
               $('.loading').addClass('hide');
               var map = new google.maps.Map(document.getElementById('map-canvas'), {
@@ -92,13 +93,13 @@ var app = {
 
               }
 
-          }// getCurrentPosition
+          },// getCurrentPosition
+          function error(err) {
+            console.warn('ERROR(' + err.code + '): ' + err.message);
+          },
+          {maximumAge: 0, timeout: 10000, enableHighAccuracy:true}
 
         );
-
-      })
-      .done(function(){
-        console.log('Parabzéns. A requisição foi feita com sucesso.')
       })
       .fail(function(){
         console.log('Desculpe. Algo saiu errado. Verifique sua conexão com a internet.')

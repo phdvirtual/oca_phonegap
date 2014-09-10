@@ -1,55 +1,62 @@
-<?xml version='1.0' encoding='utf-8'?>
-<widget id="phdvirtual.ocadoacai" version="1.0.3" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>Oca do Açaí</name>
-    <description>
-        O melhor Açaí do Rio Grande do Norte.
-    </description>
-    <author email="app@phdvirtual.com.br" href="http://phdvirtual.com.br">
-        Phd Virtual
-    </author>
+<?xml version="1.0" encoding="UTF-8"?>
+	<widget xmlns = "http://www.w3.org/ns/widgets"
+		xmlns:gap = "http://phonegap.com/ns/1.0"
+		id        = "phdvirtual.ocadoacai"
+		versionCode=""
+		version   = "1.0.3">
+		<name>Oca do Açaí</name>
+		<description> O melhor Açaí do Rio Grande do Norte.</description>
+		<author href="http://phdvirtual.com.br" email="app@phdvirtual.com.br"> Phd Virtual </author>
+		<preference name="phonegap-version" value="3.5.0" />
+		<preference name="orientation" value="default" />
+		<preference name="fullscreen" value="true" />
+		<preference name="target-device" value="universal" />
+		<preference name="webviewbounce" value="true" />
+		<preference name="prerendered-icon" value="true" />
+		<preference name="stay-in-webview" value="true" />
+		<preference name="ios-statusbarstyle" value="black-opaque" />
+		<preference name="detect-data-types" value="true" />
+		<preference name="exit-on-suspend" value="true" />
+    <preference name="splashscreen" value="screen" />
+		<preference name="auto-hide-splash-screen" value="true" />
+		<preference name="EnableViewportScale" value="false" />
+		<preference name="MediaPlaybackRequiresUserAction" value="false" />
+		<preference name="AllowInlineMediaPlayback" value="false" />
+		<preference name="BackupWebStorage" value="cloud" />
+		<preference name="TopActivityIndicator" value="gray" />
+		<preference name="KeyboardDisplayRequiresUserAction" value="true" />
+		<preference name="HideKeyboardFormAccessoryBar" value="false" />
+		<preference name="SuppressesIncrementalRendering" value="false" />
+		<preference name="android-minSdkVersion" value="7" />
+		<preference name="android-installLocation" value="auto" />
+		<preference name="SplashScreenDelay" value="10000" />
+		<preference name="ErrorUrl" value=""/>
+		<preference name="BackgroundColor" value=""/>
+		<preference name="KeepRunning" value="true"/>
+		<preference name="DisallowOverscroll" value="false"/>
+		<preference name="LoadingDialog" value=","/>
+		<preference name="LoadUrlTimeoutValue" value="20000" />
+		<preference name="disable-cursor" value="true" />
+		<gap:platform name="android" />
+		<feature name="http://api.phonegap.com/1.0/network"/>
+		<feature name="http://api.phonegap.com/1.0/geolocation"/>
+		<gap:plugin name="org.apache.cordova.network-information"  />
+		<gap:plugin name="org.apache.cordova.geolocation"  />
+		<gap:plugin name="org.apache.cordova.splashscreen"  />
 
-    <preference name="phonegap-version" value="3.5.0" />
-    <preference name="orientation" value="default" />
-    <preference name="target-device" value="universal" />
-    <preference name="fullscreen" value="true" />
-    <preference name="webviewbounce" value="true" />
-    <preference name="prerendered-icon" value="true" />
-    <preference name="stay-in-webview" value="false" />
-    <preference name="ios-statusbarstyle" value="black-opaque" />
-    <preference name="detect-data-types" value="true" />
-    <preference name="exit-on-suspend" value="false" />
-    <preference name="show-splash-screen-spinner" value="true" />
-    <preference name="auto-hide-splash-screen" value="true" />
-    <preference name="disable-cursor" value="false" />
-    <preference name="android-minSdkVersion" value="3" />
-    <preference name="android-installLocation" value="auto" />
+    <icon src="www/res/icon/android/icon-36-ldpi.png" gap:platform="android" gap:density="ldpi" />
+		<icon src="www/res/icon/android/icon-48-mdpi.png" gap:platform="android" gap:density="mdpi" />
+		<icon src="www/res/icon/android/icon-72-hdpi.png" gap:platform="android" gap:density="hdpi" />
+		<icon src="www/res/icon/android/icon-96-xhdpi.png" gap:platform="android" gap:density="xhdpi" />
+		<icon src="www/res/icon/android/icon-72-hdpi.png" />
 
-    <gap:plugin name="org.apache.cordova.console" version="0.2.7" />
-    <gap:plugin name="org.apache.cordova.dialogs" version="0.2.6" />
-    <gap:plugin name="org.apache.cordova.network-information" version="0.2.7" />
-    <gap:plugin name="org.apache.cordova.geolocation" version="0.3.7" />
-    <gap:plugin name="org.apache.cordova.globalization" version="0.2.6" />
-    <gap:plugin name="org.apache.cordova.inappbrowser" version="0.3.3" />
-    <gap:plugin name="org.apache.cordova.media" version="0.2.8" />
-    <gap:plugin name="org.apache.cordova.media-capture" version="0.2.8" />
-    <gap:plugin name="org.apache.cordova.splashscreen" version="0.2.7" />
-    <gap:plugin name="org.apache.cordova.vibration" version="0.3.7" />
+    <gap:splash src="www/res/screen/android/screen-ldpi-portrait.png" gap:platform="android" gap:density="ldpi" />
+		<gap:splash src="www/res/screen/android/screen-mdpi-portrait.png" gap:platform="android" gap:density="mdpi" />
+		<gap:splash src="www/res/screen/android/screen-xhdpi-portrait.png" gap:platform="android" gap:density="hdpi" />
+		<gap:splash src="www/res/screen/android/screen-xhdpi-portrait.png" gap:platform="android" gap:density="xhdpi" />
+		<gap:splash src="www/res/screen/android/screen-xhdpi-landscape.png" gap:platform="android" gap:density="xxhdpi" />
+    <gap:splash src="www/res/screen.png" />
 
-    <icon src="www/icon.png" />
-    <icon gap:platform="android" gap:qualifier="ldpi" src="res/drawable-ldpi/icon.png" />
-    <icon gap:platform="android" gap:qualifier="mdpi" src="res/drawable-mdpi/icon.png" />
-    <icon gap:platform="android" gap:qualifier="hdpi" src="res/drawable-hdpi/icon.png" />
-    <icon gap:platform="android" gap:qualifier="xhdpi" src="res/drawable-xdpi/icon.png" />
-
-    <feature name="SplashScreen">
-      <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
-    </feature>
-
-    <gap:splash gap:platform="android" gap:qualifier="port-ldpi" src="res/drawable-ldpi/screen.png" />
-    <gap:splash gap:platform="android" gap:qualifier="port-mdpi" src="res/drawable-mdpi/screen.png" />
-    <gap:splash gap:platform="android" gap:qualifier="port-hdpi" src="res/drawable-hdpi/screen.png" />
-    <gap:splash gap:platform="android" gap:qualifier="port-xhdpi" src="res/drawable-xhdpi/screen.png" />
-
-
-    <access origin="*" />
-</widget>
+    <icon src="res/icon.png" gap:role="default" />
+		<access origin="*" />
+	</widget>
