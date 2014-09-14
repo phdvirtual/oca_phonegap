@@ -1,25 +1,27 @@
+'use strict';
+
+var locations,
+    my_lat,
+    my_long,
+    marker2,
+    current_image;
+
 var app = {
     initialize: function() {
         this.bindEvents();
     },
     bindEvents: function() {
-        document.addEventListener('deviceready', this.onDeviceReady, false);
-        //this.onDeviceReady();// remove esta linha antes de publicar e desconmentar a de cima
+        //document.addEventListener('deviceready', this.onDeviceReady, false);
+        this.onDeviceReady();// remove esta linha antes de publicar e desconmentar a de cima
     },
     onDeviceReady: function() {
 
-
-
       $.getJSON('http://oca-admin.herokuapp.com/clients/index.json', function(data){
-
         locations = data;
-
-
       })
       .done(function(){
 
-        console.log('Parabéns. A requisição foi feita com sucesso.')
-
+        //console.log('Parabéns. A requisição foi feita com sucesso.')
         var image2 = "img/eu.png";
         var image = "img/icone.png";
         var image_distribuidor = "img/distribuidor.png";
@@ -28,20 +30,22 @@ var app = {
 
         navigator.geolocation.getCurrentPosition(
           function(posicao) {
+
               var pos = new google.maps.LatLng(posicao.coords.latitude, posicao.coords.longitude);
+
               my_lat = posicao.coords.latitude;
               my_long = posicao.coords.longitude;
-              console.log(my_lat);
-              console.log(my_long);
 
-              $('.loading').addClass('hide');
-              var map = new google.maps.Map(document.getElementById('map-canvas'), {
+              hide_loading();
+
+              var options = {
                 zoom: 14,
                 center: new google.maps.LatLng(my_lat, my_long),
                 scrollwheel: true,
                 scaleControl: false,
                 mapTypeId: google.maps.MapTypeId.ROADMAP
-              });
+              };
+              var map = new google.maps.Map(document.getElementById('map-canvas'), options);
 
               marker2 = new google.maps.Marker({
                 position: new google.maps.LatLng(my_lat,my_long),
@@ -75,6 +79,8 @@ var app = {
                 };
                 console.log(current_image);
 
+                // Aqui aplicar o loop para pegar as distências
+
                 marker = new google.maps.Marker({
                   position: new google.maps.LatLng(locations[i]['lat'], locations[i]['long']),
                   icon: current_image,
@@ -107,4 +113,11 @@ var app = {
 
 
     }
+};
+
+function hide_loading(){
+  $('.loading').addClass('hide');
+};
+function show_loading(){
+  $('.loading').removeClass('hide');
 };
