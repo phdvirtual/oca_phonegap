@@ -119,3 +119,9 @@ address strong {
 .box-map-voce {
   height: 50px;
 }
+.distancia {
+  color: red;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}

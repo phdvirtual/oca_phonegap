@@ -4,7 +4,8 @@ var locations,
     my_lat,
     my_long,
     marker2,
-    current_image;
+    current_image,
+    url_clients_json = "http://oca-admin.herokuapp.com/clients/index.json";
 
 var app = {
     initialize: function() {
@@ -16,9 +17,9 @@ var app = {
     },
     onDeviceReady: function() {
 
-      $.getJSON('http://oca-admin.herokuapp.com/clients/index.json', function(data){
-        locations = data;
-      })
+      //get_data();
+
+      $.getJSON( url_clients_json , function(data){ locations = data; })
       .done(function(){
 
         //console.log('Parabéns. A requisição foi feita com sucesso.')
@@ -77,7 +78,6 @@ var app = {
                 } else {
                   current_image = image_revendedor
                 };
-                console.log(current_image);
 
                 // Aqui aplicar o loop para pegar as distências
 
@@ -89,10 +89,11 @@ var app = {
                 });
 
                 //marker.setAnimation(google.maps.Animation.BOUNCE);
+                locations[i]['distance'] = get_distance( locations[i]['lat'], locations[i]['long'], my_lat, my_long );
 
-                google.maps.event.addListener(marker, "click", (function( marker, i ) {
+                google.maps.event.addListener(marker, "click", ( function( marker, i ) {
                   return function(){
-                    infowindow.setContent("<div class='box-map'><div class='name'>" + locations[i]['title'] + "</div><div class='site'>" + locations[i]['phone1'] + "<br />" + locations[i]['address'] + "</div>" + "</div>");
+                    infowindow.setContent("<div class='box-map'><div class='name'>" + locations[i]['title'] + "</div><div class='site'>" + locations[i]['phone1'] + "<br />" + locations[i]['address'] + "<span class='distancia'>" + locations[i]['distance'] + "</span>" + "</div>" + "</div>");
                     infowindow.open(map, marker);
                   }
                 })(marker, i));
@@ -120,4 +121,12 @@ function hide_loading(){
 };
 function show_loading(){
   $('.loading').removeClass('hide');
+};
+
+function get_distance(fromLat, fromLong, toLat, toLong) {
+  var latLngA = new google.maps.LatLng(fromLat, fromLong);
+  var latLngB = new google.maps.LatLng(toLat, toLong);
+  console.log('Função get distance');
+  var distance = google.maps.geometry.spherical.computeDistanceBetween(latLngA, latLngB) / 1000;
+  return (distance.toFixed(2) + " km");
 };
