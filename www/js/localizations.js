@@ -12,8 +12,8 @@ var app = {
         this.bindEvents();
     },
     bindEvents: function() {
-        //document.addEventListener('deviceready', this.onDeviceReady, false);
-        this.onDeviceReady();// remove esta linha antes de publicar e desconmentar a de cima
+        document.addEventListener('deviceready', this.onDeviceReady, false);
+        //this.onDeviceReady();// remove esta linha antes de publicar e desconmentar a de cima
     },
     onDeviceReady: function() {
 
