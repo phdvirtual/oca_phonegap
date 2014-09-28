@@ -46,37 +46,52 @@ function formata_lojas(dados, my_lat, my_long){
     lojas[i].title = dados[i].title;
     lojas[i].distancia = parseFloat(get_distance_numb( dados[i]['lat'], dados[i]['long'], my_lat, my_long ));
     lojas[i].address = dados[i].address;
-    lojas[i].estado = dados[i].estad;
+    lojas[i].estado = dados[i].estado;
   });
 
-  lojas.sort(function( a,b ) {
-    return a.distancia > b.distancia
-  });
+  sortLojas(lojas); // Ordena as lojas pela distância
   // falta ordenar o array de lojas por distância
   return lojas;
 };
 
+function sortLojas(lojas) {
+  var lojas = lojas;
+  lojas.sort(function( a,b ) {
+    if (a.distancia > b.distancia) {
+      return 1;
+    } else if (a.distancia < b.distancia) {
+      return -1;
+    } else {
+      return 0;
+    };
+  });
+};
+
 function escreve_resultado( lojas, dados, my_lat, my_long ) {
+
+  var lojas = lojas;
+  var listaLojas = [];
 
    $(lojas).each(
      function(i){
-       dados[i].distancia = get_distance( dados[i]['lat'], dados[i]['long'], my_lat, my_long );
-       lojas[i] = "<div class='lista-cada row'>";
-       lojas[i] += "  <div class='small-3 columns item-image'><img src='img/logomarca.png' class='banner-item'></div>";
-       lojas[i] += "  <div class='small-9 columns'>";
-       lojas[i] += "    <p><strong class='title'>" + dados[i].title + "</strong><br>";
-       lojas[i] += "    <address>";
-       lojas[i] += "      <strong>Distância: </strong>" + dados[i].distancia + "<br/> ";
-       lojas[i] += "      <strong>Endereço: </strong>" + dados[i].address + "<br/> ";
-       lojas[i] += "      <strong>Estado: </strong> " + dados[i].estado + " <br>";
-       lojas[i] += "    </address>";
-       lojas[i] += "  </div>";
-       lojas[i] += "</div>";
+       listaLojas[i] = {};
+       listaLojas[i].distancia = get_distance( lojas[i]['lat'], lojas[i]['long'], my_lat, my_long );
+       listaLojas[i] = "<div class='lista-cada row'>";
+       lista//lojas[i] += "  <div class='small-3 columns item-image'><img src='img/logomarca.png' class='banner-item'></div>";
+       listaLojas[i] += "  <div class='small-12 columns'>";
+       listaLojas[i] += "    <p><strong class='title'>" + lojas[i].title + "</strong>";
+       listaLojas[i] += "    <address>";
+       listaLojas[i] += "      <p><strong>Distância: </strong>" + lojas[i].distancia + " km</p>";
+       listaLojas[i] += "      <p><strong>Endereço: </strong>" + lojas[i].address + " </p>";
+       listaLojas[i] += "      <p><strong>Estado: </strong> " + lojas[i].estado + " </p>";
+       listaLojas[i] += "    </address>";
+       listaLojas[i] += "  </div>";
+       listaLojas[i] += "</div>";
      }
   
    );
 
-  $("#lojas-loop").html(lojas);
+  $("#lojas-loop").html(listaLojas);
   hideLoading();
 };
 

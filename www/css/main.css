@@ -10,16 +10,15 @@ body#mapa {
   padding-bottom: 0!important;
 }
 .main-title {
-  font-size: 24px;
+  font-size: 18px;
   color: #df863e;
   border-bottom: 1px solid #df863e;
-  width: 95%;
   position: relative;
-  left: 20px;
+  left: 0;
   margin: 20px 0;
 }
 .title {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: normal;
 }
 .logomarca {
@@ -96,7 +95,10 @@ p {
 }
 .lista {
   border: none!important;
-  margin-top: 0;
+  margin-top: 10px;
+}
+.lista p {
+  margin-bottom: 0;
 }
 .lista-cada {
   border: none;
