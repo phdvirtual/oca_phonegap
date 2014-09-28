@@ -31,6 +31,12 @@ body#mapa {
   padding-top: 1%;
   padding-bottom: 3%;
   text-transform: uppercase;
+  background-color: #a6c85b;
+}
+.logomarca #item-logo {
+  position: relative;
+  top: 8px;
+  left: 5px;
 }
 .logomarca img {
   max-height: 100px;
@@ -50,27 +56,40 @@ p {
   width: 100%;
 }
 .icons-top {
-  width: 60%;
+  width: 85%;
   float: right;
   text-align: right;
   margin: 0;
-  padding-top: 6px;
   position: relative;
-  top: 10%;
+  min-height: 40px;
+  top: 2px;
 }
 .icons-top li {
   list-style-type: none;
-  margin-left: 12%;
+  margin-left: 4%;
   display: block;
-  float: left;
-  width: 12%;
+  float: right;
+  width: 15%;
   line-height: 43px;
+  text-align: center;
 }
 .icons-top li a {
-  line-height: 43px;
+  text-align: center;
+  font-size: 8px;
+  text-transform: none;
+  color: #fff;
+}
+.icons-top li span {
+  display: block;
+  line-height: 12px;
+  text-transform: uppercase;
 }
 .icons-top li img {
-  width: 100%;
+  width: 34px;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  display: block;
+  float: none;
 }
 .tt-princ {
 

@@ -1,3 +1,15 @@
+/*** Sequencia 
+ *  mostra loading
+ *  recebe os dados brutos
+ *  recebe a posição atual
+ *  formata o objeto lojas
+ *  escreve o resultado
+ *  calcula a distancia entre você e os lugares
+ *  remove o loading 
+ *  e mostra os dados na tela
+ * **/
+showLoading();
+
 function recebe_dados(){
   $.ajax({
     url: "http://oca-admin.herokuapp.com/clients/index.json",
@@ -9,6 +21,39 @@ function recebe_dados(){
       console.log("erro");
     }
   })
+};
+
+function posicao_atual(dados){
+  // falta inserir um loading durante a requisição
+  navigator.geolocation.getCurrentPosition(
+    function(posicao) {
+      var my_lat = posicao.coords.latitude;
+      var my_long = posicao.coords.longitude;
+      var lojas = formata_lojas(dados, my_lat, my_long);
+      escreve_resultado(lojas, dados, my_lat, my_long);
+    },
+    function(){
+      console.log("Desculpe... ocorreu um erro ao verificar sua posição.")
+    }
+  )
+};
+
+function formata_lojas(dados, my_lat, my_long){
+
+  var lojas = [];
+  $(dados).each(function(i){
+    lojas[i] = {};
+    lojas[i].title = dados[i].title;
+    lojas[i].distancia = parseFloat(get_distance_numb( dados[i]['lat'], dados[i]['long'], my_lat, my_long ));
+    lojas[i].address = dados[i].address;
+    lojas[i].estado = dados[i].estad;
+  });
+
+  lojas.sort(function( a,b ) {
+    return a.distancia > b.distancia
+  });
+  // falta ordenar o array de lojas por distância
+  return lojas;
 };
 
 function escreve_resultado( lojas, dados, my_lat, my_long ) {
@@ -32,40 +77,17 @@ function escreve_resultado( lojas, dados, my_lat, my_long ) {
    );
 
   $("#lojas-loop").html(lojas);
+  hideLoading();
 };
 
-function formata_lojas(dados, my_lat, my_long){
 
-  var lojas = [];
-  $(dados).each(function(i){
-    lojas[i] = {};
-    lojas[i].title = dados[i].title;
-    lojas[i].distancia = parseFloat(get_distance_numb( dados[i]['lat'], dados[i]['long'], my_lat, my_long ));
-    lojas[i].address = dados[i].address;
-    lojas[i].estado = dados[i].estad;
-  });
-
-  lojas.sort(function( a,b ) {
-    return a.distancia > b.distancia
-  });
-  // falta ordenar o array de lojas por distância
-  return lojas;
+function showLoading(){
+  $('.loading').removeClass('hide');
 };
+function hideLoading(){
+  $('.loading').addClass('hide');
+}
 
-function posicao_atual(dados){
-  // falta inserir um loading durante a requisição
-  navigator.geolocation.getCurrentPosition(
-    function(posicao) {
-      var my_lat = posicao.coords.latitude;
-      var my_long = posicao.coords.longitude;
-      var lojas = formata_lojas(dados, my_lat, my_long);
-      escreve_resultado(lojas, dados, my_lat, my_long);
-    },
-    function(){
-      console.log("Desculpe... ocorreu um erro ao verificar sua posição.")
-    }
-  )
-};
 
 $(function(){
   recebe_dados();
