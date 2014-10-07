@@ -72,6 +72,12 @@ p {
   line-height: 43px;
   text-align: center;
 }
+.icons-top #bt-revendedor {
+  width: 17%;
+}
+.icons-top #bt-distribuidor {
+  width: 17%;
+}
 .icons-top li a {
   text-align: center;
   font-size: 7px;
