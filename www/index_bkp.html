@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="width=device-width">
+        <title>Oca do Açaí</title>
+
+        <link rel="stylesheet" href="css/foundation.css" />
+
+        <link href='css/webfonts/roboto_medium_macroman/stylesheet.css' rel='stylesheet' type='text/css'>
+        <link href='css/webfonts/roboto_regular_macroman/stylesheet.css' rel='stylesheet' type='text/css'>
+
+        <script src="js/vendor/modernizr.js"></script>
+        <!-- <script src="http://debug.build.phonegap.com/target/target&#45;script&#45;min.js#chelogui123"></script> -->
+
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/estilo.css">
+    </head>
+    <body id="mapa">
+
+      <div class="logomarca">
+        <div class="row">
+          <div class="large-12 columns">
+            <a href="index.html"><img src="img/logomarca.png"></a>
+
+            <ul class="icons-top">
+              <li id="bt-facebook"> <a href="https://www.facebook.com/ocadoacai"> <img src="img/facebook.png" alt="" /> <span>Facebook</span> </a> </li>
+              <li id="bt-distribuidor"> <a href="revendedores.html"> <img src="img/2.fw.png" alt="" /> <span>Distribuidor</span> </a> </li>
+              <li id="bt-revendedor"> <a href="distribuidor.html"> <img src="img/tigela.png" alt="" /> <span>Conveniência</span></a> </li>
+              <li id="bt-lista"> <a href="lojas.html"> <img src="img/revender.png" alt="" /><span>Lanchar</span></a> </li>
+              <li id="bt-mundo"> <a href="index.html"> <img src="img/4.fw.png" alt="" /><span>Mapa</span> </a> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+        <div class="loading hide"></div>
+        <div class="main">
+          <div id="mapa">
+            <div id="map-canvas">
+           </div>
+          </div>
+        </div> <!-- #main -->
+
+
+      </div> <!-- #main-container -->
+
+        <!-- <script src="cordova.js"></script> -->
+        <script src="js/vendor/jquery-1.10.1.min.js"></script>
+
+        <script type="text/javascript" charset="utf-8">
+          $('.loading').removeClass('hide');
+        </script>
+
+        <script src="js/numeral.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="http://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyBRFSXE5zoPV5qwCp0MpTRL9RjFExcYoN0&sensor=false&libraries=geometry"></script>
+        <script src="js/get_distance.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/localizations.js" type="text/javascript" charset="utf-8"></script>
+
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+
+    </body>
+</html>
