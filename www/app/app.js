@@ -14,6 +14,14 @@ AppOca.config(function($routeProvider, $locationProvider)
       templateUrl : 'app/views/lanchar.html',
       controller     : 'LancharCtrl',
    })
+   .when('/conveniencia', {
+      templateUrl : 'app/views/conveniencia.html',
+      controller     : 'ConvenienciaCtrl',
+   })
+   .when('/distribuidor', {
+      templateUrl : 'app/views/distribuidor.html',
+      controller     : 'DistribuidorCtrl',
+   })
    .otherwise ({ redirectTo: '/' });
 
    // remove o # da url

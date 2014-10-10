@@ -1,4 +1,4 @@
-AppOca.controller('LancharCtrl', function($scope, $http, $location) {
+AppOca.controller('DistribuidorCtrl', function($scope, $http, $location) {
     $scope.activetab = $location.path();
     $scope.loading = true;
 
@@ -6,7 +6,7 @@ AppOca.controller('LancharCtrl', function($scope, $http, $location) {
 
     $http({
       method: "GET",
-      url: "http://oca-admin.herokuapp.com/clients/index.json"
+      url: "http://oca-admin.herokuapp.com/categories/1.json"
     })
     .success(function( data, status, headers, config ){
       $scope.lojas = data;
@@ -18,6 +18,7 @@ AppOca.controller('LancharCtrl', function($scope, $http, $location) {
 
       coor();
       $scope.loading = false;
+
     });
 
 });

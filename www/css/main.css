@@ -1,7 +1,5 @@
 body {
   font-family: 'robotoregular';
-  padding-top: 14%!important;
-  padding-bottom: 14%!important;
   font-size: 12px;
   background: #f2f2f2;
 }
@@ -16,6 +14,7 @@ body#mapa {
   position: relative;
   left: 0;
   margin: 20px 0;
+  margin-top: 70px;
 }
 .title {
   font-size: 16px;
@@ -27,10 +26,11 @@ body#mapa {
   z-index: 1001;
   width: 100%;
   color: #fff;
-  padding-top: 1%;
-  padding-bottom: 3%;
+  padding-top: 10px;
+  padding-bottom: 30px;
   text-transform: uppercase;
   background-color: #a6c85b;
+  height: 70px;
 }
 .logomarca #item-logo {
   position: relative;
@@ -39,7 +39,7 @@ body#mapa {
 }
 .logomarca img {
   max-height: 100px;
-  width: 15%;
+  width: 50px;
   margin: 0px 0;
   float: left;
   position: relative;
