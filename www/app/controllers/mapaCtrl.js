@@ -1,6 +1,5 @@
 AppOca.controller('MapaCtrl', function($scope, $http, $location) {
 
-  $scope.activetab = $location.path();
   $scope.loading = true;
 
   $http({

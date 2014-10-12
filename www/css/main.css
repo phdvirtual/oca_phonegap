@@ -39,7 +39,7 @@ body#mapa {
 }
 .logomarca img {
   max-height: 100px;
-  width: 50px;
+  width: 15%;
   margin: 0px 0;
   float: left;
   position: relative;
@@ -65,18 +65,18 @@ p {
 }
 .icons-top li {
   list-style-type: none;
-  margin-left: 4%;
+  margin-left: 3%;
   display: block;
   float: right;
-  width: 15%;
+  width: 14%;
   line-height: 43px;
   text-align: center;
 }
 .icons-top #bt-revendedor {
-  width: 17%;
+  width: 19%;
 }
 .icons-top #bt-distribuidor {
-  width: 17%;
+  width: 19%;
 }
 .icons-top li a {
   text-align: center;
@@ -90,7 +90,7 @@ p {
   text-transform: uppercase;
 }
 .icons-top li img {
-  width: 34px;
+  width: 30px;
   margin: 0 auto;
   margin-bottom: 5px;
   display: block;

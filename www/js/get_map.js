@@ -57,7 +57,7 @@ var mapa = function(locations) {
 
       google.maps.event.addListener(marker, "click", ( function( marker, i ) {
         return function(){
-          infowindow.setContent("<div class='box-map'><div class='name'>" + locations[i]['title'] + "</div><div class='site'>" + locations[i]['phone1'] + "<br />" + locations[i]['address'] + "<span class='distancia'>" + locations[i]['distance'] + "</span>" + "</div>" + "</div>");
+          infowindow.setContent("<div class='box-map'><div class='name'>" + locations[i]['title'] + "</div><div class='site'><span class='distancia'>" + locations[i]['distance'] + "</span>" + "</div>" + "</div>");
           infowindow.open(map, marker);
         }
       })(marker, i));
