@@ -6,7 +6,7 @@ AppOca.controller('LancharCtrl', function($scope, $http, $location) {
 
     $http({
       method: "GET",
-      url: "http://oca-admin.herokuapp.com/clients/index.json"
+      url: "http://oca-admin.herokuapp.com/categories/2.json"
     })
     .success(function( data, status, headers, config ){
       $scope.lojas = data;
