@@ -161,4 +161,6 @@ address strong {
   position: absolute;
   right: -20px;
   top: 5px;
+  min-width: 60px;
+  text-align: right;
 }
