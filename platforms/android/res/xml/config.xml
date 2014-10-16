@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="phdvirtual.ocadoacai.rn" version="1.2.3" versionCode="10" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <preference name="loglevel" value="DEBUG" />
+    <preference name="AndroidLaunchMode" value="singleTop" />
+    <feature name="App">
+        <param name="android-package" value="org.apache.cordova.App" />
+    </feature>
+    <feature name="NetworkStatus">
+        <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
+    </feature>
+    <feature name="SplashScreen">
+        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+    </feature>
+    <name>Oca do Açaí</name>
+    <description> O melhor Açaí do Rio Grande do Norte.</description>
+    <author email="app@phdvirtual.com.br" href="http://phdvirtual.com.br"> Phd Virtual </author>
+    <preference name="phonegap-version" value="3.5.0" />
+    <preference name="orientation" value="default" />
+    <preference name="fullscreen" value="true" />
+    <preference name="target-device" value="universal" />
+    <preference name="webviewbounce" value="true" />
+    <preference name="prerendered-icon" value="true" />
+    <preference name="stay-in-webview" value="true" />
+    <preference name="ios-statusbarstyle" value="black-opaque" />
+    <preference name="detect-data-types" value="true" />
+    <preference name="exit-on-suspend" value="true" />
+    <preference name="splashscreen" value="screen" />
+    <preference name="auto-hide-splash-screen" value="true" />
+    <preference name="EnableViewportScale" value="false" />
+    <preference name="MediaPlaybackRequiresUserAction" value="false" />
+    <preference name="AllowInlineMediaPlayback" value="false" />
+    <preference name="BackupWebStorage" value="cloud" />
+    <preference name="TopActivityIndicator" value="gray" />
+    <preference name="KeyboardDisplayRequiresUserAction" value="true" />
+    <preference name="HideKeyboardFormAccessoryBar" value="false" />
+    <preference name="SuppressesIncrementalRendering" value="false" />
+    <preference name="android-minSdkVersion" value="7" />
+    <preference name="android-installLocation" value="auto" />
+    <preference name="SplashScreenDelay" value="10000" />
+    <preference name="ErrorUrl" value="" />
+    <preference name="BackgroundColor" value="" />
+    <preference name="KeepRunning" value="true" />
+    <preference name="DisallowOverscroll" value="false" />
+    <preference name="LoadUrlTimeoutValue" value="20000" />
+    <preference name="disable-cursor" value="true" />
+    <gap:platform name="android" />
+    <feature name="http://api.phonegap.com/1.0/network" />
+    <feature name="http://api.phonegap.com/1.0/geolocation" />
+    <gap:plugin name="org.apache.cordova.network-information" />
+    <gap:plugin name="org.apache.cordova.geolocation" />
+    <gap:plugin name="org.apache.cordova.splashscreen" />
+    <icon gap:density="ldpi" gap:platform="android" src="www/res/icon/android/icon-36-ldpi.png" />
+    <icon gap:density="mdpi" gap:platform="android" src="www/res/icon/android/icon-48-mdpi.png" />
+    <icon gap:density="xhdpi" gap:platform="android" src="www/res/icon/android/icon-96-xhdpi.png" />
+    <icon gap:density="hdpi" gap:platform="android" src="www/res/icon/android/icon-72-hdpi.png" />
+    <gap:splash gap:density="ldpi" gap:platform="android" src="www/res/screen/android/screen-ldpi-portrait.png" />
+    <gap:splash gap:density="mdpi" gap:platform="android" src="www/res/screen/android/screen-mdpi-portrait.png" />
+    <gap:splash gap:density="hdpi" gap:platform="android" src="www/res/screen/android/screen-xhdpi-portrait.png" />
+    <gap:splash gap:density="xhdpi" gap:platform="android" src="www/res/screen/android/screen-xhdpi-portrait.png" />
+    <gap:splash gap:density="xxhdpi" gap:platform="android" src="www/res/screen/android/screen-xhdpi-landscape.png" />
+    <gap:splash src="www/res/screen.png" />
+    <icon gap:role="default" src="res/icon.png" />
+    <access origin="*" />
+</widget>

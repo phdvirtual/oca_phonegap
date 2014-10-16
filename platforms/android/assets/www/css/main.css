@@ -1,0 +1,166 @@
+body {
+  font-family: 'robotoregular';
+  font-size: 12px;
+  background: #f2f2f2;
+}
+body#mapa {
+  padding-top: 0!important;
+  padding-bottom: 0!important;
+}
+.main-title {
+  font-size: 18px;
+  color: #df863e;
+  border-bottom: 1px solid #df863e;
+  position: relative;
+  left: 0;
+  margin: 20px 0;
+  margin-top: 70px;
+}
+.title {
+  font-size: 14px;
+  font-weight: normal;
+}
+.logomarca {
+  position: fixed;
+  top: 0;
+  z-index: 1001;
+  width: 100%;
+  color: #fff;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+  background-color: #a6c85b;
+  height: 70px;
+}
+.logomarca #item-logo {
+  position: relative;
+  top: 8px;
+  left: 5px;
+}
+.logomarca img {
+  max-height: 100px;
+  width: 15%;
+  margin: 0px 0;
+  float: left;
+  position: relative;
+  top: 3px;
+}
+p {
+  margin-bottom: 5px;
+  font-size: 0.7rem;
+}
+.rodape {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.icons-top {
+  width: 85%;
+  float: right;
+  text-align: right;
+  margin: 0;
+  position: relative;
+  min-height: 40px;
+  top: 2px;
+}
+.icons-top li {
+  list-style-type: none;
+  margin-left: 3%;
+  display: block;
+  float: right;
+  width: 14%;
+  line-height: 43px;
+  text-align: center;
+}
+.icons-top #bt-revendedor {
+  width: 19%;
+}
+.icons-top #bt-distribuidor {
+  width: 19%;
+}
+.icons-top li a {
+  text-align: center;
+  font-size: 7px;
+  text-transform: none;
+  color: #fff;
+}
+.icons-top li span {
+  display: block;
+  line-height: 12px;
+  text-transform: uppercase;
+}
+.icons-top li img {
+  width: 30px;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  display: block;
+  float: none;
+}
+.tt-princ {
+
+}
+.lista {
+  border: none!important;
+  margin-top: 10px;
+}
+.lista p {
+  margin-bottom: 0;
+}
+.lista-cada {
+  border: none;
+  background: #fff;
+  padding: 1%;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px #ccc;
+  color: #666;
+  width: 98%!important;
+  margin: 0 auto!important;
+  margin-top: 10px!important;
+  min-height: 80px;
+}
+address {
+  font-size: 14px;
+  font-style: normal;
+  line-height: 25px;
+  margin-top: 5px;
+}
+address strong {
+  font-weight: normal;
+}
+.item-image {
+  text-align: center;
+  padding: 0;
+}
+.lista-cada a {
+  color: #6C3E90;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: normal;
+}
+.lista-cada strong {
+  color: #6C3E90;
+  font-weight: bold;
+}
+.main {
+  height: 100%!important;
+}
+.box-map-voce {
+  height: 50px;
+}
+.distancia {
+  color: #6c3e90;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.lista-cada {
+  position: relative;
+  padding-right: 30px;
+}
+.show-distancia {
+  position: absolute;
+  right: -20px;
+  top: 5px;
+  min-width: 60px;
+  text-align: right;
+}

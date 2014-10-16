@@ -1,0 +1,21 @@
+<div class="loading" ng-show="loading"></div>
+
+<div class="row lista">
+  <div class="small-12 large-12 columns">
+    <h2 class="main-title">Conveniências</h2>
+    <div id="lojas-loop">
+       <div ng-repeat='loja in lojas' class='lista-cada row'>
+         <!-- <div class='small&#45;3 columns item&#45;image'><img src='img/logomarca.png' class='banner&#45;item'></div> -->
+         <div class='small-12 columns'>
+           <p><strong class='title'>{{ loja.title }}</strong>
+           <address>
+             <p><strong>Distância: </strong> {{loja.distance}} </p>
+             <p><strong>Endereço: </strong> {{loja.address}} </p>
+             <p><strong>Telefone: </strong> {{loja.phone1}} </p>
+             <p><strong>Estado: </strong> {{loja.estado}} </p>
+           </address>
+         </div>
+       </div>
+    </div>
+  </div>
+</div>
