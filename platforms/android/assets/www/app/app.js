@@ -1,1 +1,1 @@
-var AppOca = angular.module("AppOca", ['ngRoute']);
+var AppOca = angular.module("AppOca", []);

@@ -1,5 +1,3 @@
-'use strict';
-
 var CordovaInit = function() {
 
 	var onDeviceReady = function() {
@@ -7,7 +5,6 @@ var CordovaInit = function() {
 	};
 
 	var receivedEvent = function() {
-		console.log('Start event received, bootstrapping application setup.');
 		angular.bootstrap($('body'), ['AppOca']);
 	};
 
@@ -18,15 +15,12 @@ var CordovaInit = function() {
 	//If cordova is present, wait for it to initialize, otherwise just try to
 	//bootstrap the application.
 	if (window.cordova !== undefined) {
-		console.log('Cordova found, wating for device.');
 		this.bindEvents();
 	} else {
-		console.log('Cordova not found, booting application');
 		receivedEvent('manual');
 	}
 };
 
 $(function() {
-	console.log('Bootstrapping!');
 	new CordovaInit();
 });

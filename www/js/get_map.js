@@ -1,4 +1,4 @@
-var mapa = function(locations) {
+function mapa(locations) {
     var image2 = "img/eu.png";
     var image = "img/icone.png";
     var image_distribuidor = "img/distribuidor.png";
@@ -63,7 +63,6 @@ var mapa = function(locations) {
       })(marker, i));
     }
 
-    var event = new Event("has_mapa");
-    document.dispatchEvent(event);
+    $(document).trigger("has_mapa");
 
 }

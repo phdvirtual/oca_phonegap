@@ -11,7 +11,7 @@ AppOca.controller('DistribuidorCtrl', function($scope, $http, $location) {
     .success(function( data, status, headers, config ){
       $scope.lojas = data;
 
-      document.addEventListener("has_position", function(){
+      $(document).on("has_position", function(){
         has_data = true;
         format_data($scope);
       });

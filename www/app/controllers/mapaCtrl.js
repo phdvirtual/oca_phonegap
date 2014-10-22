@@ -15,12 +15,12 @@ AppOca.controller('MapaCtrl', function($scope, $http, $location) {
 
     coor();
 
-    document.addEventListener("has_position", function(){
+    $(document).on("has_position", function(){
       mapa(data);
       has_data = true;
     });
 
-    document.addEventListener("has_mapa", function(){
+    $(document).on("has_mapa", function(){
       $scope.$apply(function ($scope) {
         $scope.loading = false;
       });
