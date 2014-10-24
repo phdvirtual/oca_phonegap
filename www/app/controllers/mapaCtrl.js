@@ -12,7 +12,6 @@ AppOca.controller('MapaCtrl', function($scope, $http, $location) {
     // coor() recebe as coordenadas e dispara um evento has_position quando conclui.
     // mapa() monta o mapa passando os dados vindos do $http acima.
     //
-
     coor();
 
     $(document).on("has_position", function(){

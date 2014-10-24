@@ -5,7 +5,6 @@ function coor(){
   var cordenadas = navigator.geolocation.getCurrentPosition(
     function(posicao) {
 
-
       var pos = new google.maps.LatLng(posicao.coords.latitude, posicao.coords.longitude);
 
 
@@ -23,3 +22,5 @@ function coor(){
     { maximumAge: 3000, timeout: 3000, enableHighAccuracy: true }
   )
 };
+
+coor();
