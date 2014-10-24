@@ -3,7 +3,7 @@
 /Users/chelogui/workspace/phdvirtual/agosto/oca_phonegap/platforms/android/ant-build/classes/org/apache/cordova/networkinformation/NetworkManager.class \
 /Users/chelogui/workspace/phdvirtual/agosto/oca_phonegap/platforms/android/ant-build/classes/org/apache/cordova/splashscreen/SplashScreen.class \
 /Users/chelogui/workspace/phdvirtual/agosto/oca_phonegap/platforms/android/ant-build/classes/phdvirtual/ocadoacai/rn/BuildConfig.class \
-/Users/chelogui/workspace/phdvirtual/agosto/oca_phonegap/platforms/android/ant-build/classes/phdvirtual/ocadoacai/rn/OcadoAa.class \
+/Users/chelogui/workspace/phdvirtual/agosto/oca_phonegap/platforms/android/ant-build/classes/phdvirtual/ocadoacai/rn/CordovaApp.class \
 /Users/chelogui/workspace/phdvirtual/agosto/oca_phonegap/platforms/android/ant-build/classes/phdvirtual/ocadoacai/rn/R$attr.class \
 /Users/chelogui/workspace/phdvirtual/agosto/oca_phonegap/platforms/android/ant-build/classes/phdvirtual/ocadoacai/rn/R$drawable.class \
 /Users/chelogui/workspace/phdvirtual/agosto/oca_phonegap/platforms/android/ant-build/classes/phdvirtual/ocadoacai/rn/R$string.class \
