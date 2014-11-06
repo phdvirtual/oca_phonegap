@@ -24,6 +24,7 @@ body#mapa {
 }
 #submenu {
   top: 75px!important;
+  z-index: 10000;
 }
 #menu-drop {
   width: 90px;

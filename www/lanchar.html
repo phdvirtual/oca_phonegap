@@ -46,7 +46,7 @@
               <h2 class="main-title">Onde lanchar</h2>
               <div id="lojas-loop">
                  <div ng-repeat='loja in lojas' class='lista-cada row'>
-                   <div class='small-3 columns item-image'><img src='img/logomarca.png' class='banner-item'></div>
+                   <div class='small-3 columns item-image {{loja.id}}'><img src='img/{{loja.image_file_name}}' class='banner-item'></div>
                    <div class='small-8 columns'>
                      <p><strong class='title' ng-cloak>{{ loja.title }} </strong><span class="show-distancia" ng-cloak> {{loja.distance}}</span>
                      <address>
