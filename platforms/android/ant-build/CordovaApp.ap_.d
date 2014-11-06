@@ -43,7 +43,6 @@
 /Users/chelogui/workspace/phdvirtual/agosto/oca_phonegap/platforms/android/assets/www/index.html \
 /Users/chelogui/workspace/phdvirtual/agosto/oca_phonegap/platforms/android/assets/www/js \
 /Users/chelogui/workspace/phdvirtual/agosto/oca_phonegap/platforms/android/assets/www/lanchar.html \
-/Users/chelogui/workspace/phdvirtual/agosto/oca_phonegap/platforms/android/assets/www/phonegap.js \
 /Users/chelogui/workspace/phdvirtual/agosto/oca_phonegap/platforms/android/assets/www/plugins \
 /Users/chelogui/workspace/phdvirtual/agosto/oca_phonegap/platforms/android/assets/www/res \
 /Users/chelogui/workspace/phdvirtual/agosto/oca_phonegap/platforms/android/assets/www/app/app.js \
