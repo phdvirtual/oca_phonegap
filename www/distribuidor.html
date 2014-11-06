@@ -45,10 +45,10 @@
                <div ng-repeat='loja in lojas' class='lista-cada row'>
                  <!-- <div class='small&#45;3 columns item&#45;image'><img src='img/logomarca.png' class='banner&#45;item'></div> -->
                  <div class='small-12 columns'>
-                   <p><strong class='title'>{{ loja.title }} </strong><span class="show-distancia"> {{loja.distance}}</span>
+                   <p><strong class='title' ng-cloak>{{ loja.title }} </strong><span class="show-distancia" ng-cloak> {{loja.distance}}</span>
                    <address>
-                     <p> {{loja.address}} - {{loja.estado}} </p>
-                     <p> {{loja.phone1}} </p>
+                     <p ng-cloak> {{loja.address}} - {{loja.estado}} </p>
+                     <p ng-cloak> {{loja.phone1}} </p>
                    </address>
                  </div>
                </div>
