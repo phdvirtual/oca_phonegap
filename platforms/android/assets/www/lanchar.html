@@ -25,10 +25,11 @@
             <a href="index.html" id="item-logo"><img src="img/logomarca.png"></a>
 
             <ul class="icons-top">
+              <li id="menu-drop"><a data-dropdown="submenu" aria-controls="drop1" aria-expanded="false" data-options="align:right" href="#"><img src="img/menu.png" alt=""/></a></li>
               <li id="bt-facebook"> <a href="https://www.facebook.com/ocadoacai"> <img src="img/face-icone.png" alt="" /> <span>Facebook</span> </a> </li>
-              <li id="bt-distribuidor"> <a href="./distribuidor.html"> <img src="img/distribuidores.png" alt="" /> <span>Distribuidor</span> </a> </li>
-              <li id="bt-revendedor"> <a href="./conveniencia.html"> <img src="img/conveniencia.png" alt="" /> <span>Conveniência</span></a> </li>
-              <li id="bt-lista"> <a href="./lanchar.html"> <img src="img/lanchar.png" alt="" /><span>Lanchar</span></a> </li>
+              <!-- <li id="bt&#45;distribuidor"> <a href="./distribuidor.html"> <img src="img/distribuidores.png" alt="" /> <span>Distribuidor</span> </a> </li> -->
+              <!-- <li id="bt&#45;revendedor"> <a href="./conveniencia.html"> <img src="img/conveniencia.png" alt="" /> <span>Conveniência</span></a> </li> -->
+              <!-- <li id="bt&#45;lista"> <a href="./lanchar.html"> <img src="img/lanchar.png" alt="" /><span>Lanchar</span></a> </li> -->
               <li id="bt-mundo"> <a href="./index.html"> <img src="img/maps.png" alt="" /><span>Mapa</span> </a> </li>
             </ul>
           </div>
@@ -45,11 +46,11 @@
               <h2 class="main-title">Onde lanchar</h2>
               <div id="lojas-loop">
                  <div ng-repeat='loja in lojas' class='lista-cada row'>
-                   <!-- <div class='small&#45;3 columns item&#45;image'><img src='img/logomarca.png' class='banner&#45;item'></div> -->
-                   <div class='small-12 columns'>
-                     <p><strong class='title'>{{ loja.title }} </strong><span class="show-distancia"> {{loja.distance}}</span>
+                   <div class='small-3 columns item-image'><img src='img/logomarca.png' class='banner-item'></div>
+                   <div class='small-8 columns'>
+                     <p><strong class='title' ng-cloak>{{ loja.title }} </strong><span class="show-distancia" ng-cloak> {{loja.distance}}</span>
                      <address>
-                     <p> {{loja.address}} - {{loja.estado}} </p>
+                     <p ng-cloak> {{loja.address}} - {{loja.estado}} </p>
                      </address>
                    </div>
                  </div>
@@ -59,6 +60,12 @@
       
       </div>
 
+      <ul id="submenu" data-dropdown-content class="f-dropdown" aria-hidden="true" tabindex="-1">
+        <li><a href="./lanchar.html">Lanchonetes</a></li>
+        <li><a href="./conveniencia.html">Conveniência</a></li>
+        <li><a href="./distribuidor.html">Distribuidores</a></li>
+      </ul>
+            
 
 
       <script src="cordova.js"></script>

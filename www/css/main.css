@@ -1,6 +1,9 @@
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
     display: none !important;
 }
+.none {
+  display: none;
+}
 body {
   font-family: 'robotoregular';
   font-size: 12px;
@@ -19,9 +22,12 @@ body#mapa {
   margin: 20px 0;
   margin-top: 70px;
 }
+#submenu {
+  top: 75px!important;
+}
 #menu-drop {
   width: 90px;
-  height: 30px;
+  height: 55px;
 }
 #menu-drop a {
   display: block;

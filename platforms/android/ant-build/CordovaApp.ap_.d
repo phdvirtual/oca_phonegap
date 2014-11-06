@@ -108,12 +108,14 @@
 /Users/chelogui/workspace/phdvirtual/agosto/oca_phonegap/platforms/android/assets/www/img/distribuidores.png \
 /Users/chelogui/workspace/phdvirtual/agosto/oca_phonegap/platforms/android/assets/www/img/eu.png \
 /Users/chelogui/workspace/phdvirtual/agosto/oca_phonegap/platforms/android/assets/www/img/face-icone.png \
+/Users/chelogui/workspace/phdvirtual/agosto/oca_phonegap/platforms/android/assets/www/img/images \
 /Users/chelogui/workspace/phdvirtual/agosto/oca_phonegap/platforms/android/assets/www/img/lanchar.png \
 /Users/chelogui/workspace/phdvirtual/agosto/oca_phonegap/platforms/android/assets/www/img/loading.gif \
 /Users/chelogui/workspace/phdvirtual/agosto/oca_phonegap/platforms/android/assets/www/img/logo-oca.png \
 /Users/chelogui/workspace/phdvirtual/agosto/oca_phonegap/platforms/android/assets/www/img/logomarca-p.png \
 /Users/chelogui/workspace/phdvirtual/agosto/oca_phonegap/platforms/android/assets/www/img/logomarca.png \
 /Users/chelogui/workspace/phdvirtual/agosto/oca_phonegap/platforms/android/assets/www/img/maps.png \
+/Users/chelogui/workspace/phdvirtual/agosto/oca_phonegap/platforms/android/assets/www/img/menu.png \
 /Users/chelogui/workspace/phdvirtual/agosto/oca_phonegap/platforms/android/assets/www/img/phd.jpg \
 /Users/chelogui/workspace/phdvirtual/agosto/oca_phonegap/platforms/android/assets/www/img/revendedor.png \
 /Users/chelogui/workspace/phdvirtual/agosto/oca_phonegap/platforms/android/assets/www/img/revender.png \
