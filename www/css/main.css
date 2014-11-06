@@ -16,6 +16,19 @@ body#mapa {
   margin: 20px 0;
   margin-top: 70px;
 }
+#menu-drop {
+  width: 90px;
+  height: 30px;
+}
+#menu-drop a {
+  display: block;
+  height: 50px;
+}
+#menu-drop img {
+  width: 100%;
+  position: relative;
+  top: 10px;
+}
 .title {
   font-size: 14px;
   font-weight: normal;
@@ -31,6 +44,13 @@ body#mapa {
   text-transform: uppercase;
   background-color: #a6c85b;
   height: 70px;
+  border-bottom: 5px solid #7d3b94;
+}
+.f-dropdown {
+  
+}
+.f-dropdown li {
+  border-bottom: 1px solid #7d3b94;
 }
 .logomarca #item-logo {
   position: relative;
