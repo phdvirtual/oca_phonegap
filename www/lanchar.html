@@ -46,7 +46,8 @@
               <h2 class="main-title">Onde lanchar</h2>
               <div id="lojas-loop">
                  <div ng-repeat='loja in lojas' class='lista-cada row'>
-                   <div class='small-3 columns item-image {{loja.id}}'><img src='img/{{loja.image_file_name}}' class='banner-item'></div>
+                   <div class='small-4 columns item-image {{loja.id}} ' ng-cloak ng-if="loja.image_file_name"><img src='http://s3.amazonaws.com/ocaadmin/clients/images/000/000/0{{loja.id | numberFixedLen:2}}/thumb/{{loja.image_file_name}}' class='banner-item'></div>
+                   <div class='small-4 columns item-image' ng-cloak ng-if="!loja.image_file_name"><img src='img/logomarca.png' class='logo-oca'></div>
                    <div class='small-8 columns'>
                      <p><strong class='title' ng-cloak>{{ loja.title }} </strong><span class="show-distancia" ng-cloak> {{loja.distance}}</span>
                      <address>

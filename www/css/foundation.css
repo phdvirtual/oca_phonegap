@@ -5135,8 +5135,14 @@ th.hide-for-touch {
 .banner-item{
 	border-radius:5px;
 	padding:5px;
+  width: 80px;
+  height: 80px!important;
 }
 
+.logo-oca {
+  position: relative;
+  top: 10px;
+}
 .barra-horizontal{
 	height:30px;
 	background-color:#444;
