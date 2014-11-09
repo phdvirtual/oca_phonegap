@@ -104,6 +104,7 @@
 /Users/chelogui/workspace/phdvirtual/agosto/oca_phonegap/platforms/android/assets/www/css/webfonts/roboto_regular_macroman/specimen_files/Roboto-Regular-cleartype.png \
 /Users/chelogui/workspace/phdvirtual/agosto/oca_phonegap/platforms/android/assets/www/css/webfonts/roboto_regular_macroman/specimen_files/specimen_stylesheet.css \
 /Users/chelogui/workspace/phdvirtual/agosto/oca_phonegap/platforms/android/assets/www/img/conveniencia.png \
+/Users/chelogui/workspace/phdvirtual/agosto/oca_phonegap/platforms/android/assets/www/img/conveniencias.png \
 /Users/chelogui/workspace/phdvirtual/agosto/oca_phonegap/platforms/android/assets/www/img/distribuidor.png \
 /Users/chelogui/workspace/phdvirtual/agosto/oca_phonegap/platforms/android/assets/www/img/distribuidores.png \
 /Users/chelogui/workspace/phdvirtual/agosto/oca_phonegap/platforms/android/assets/www/img/eu.png \

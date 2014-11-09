@@ -12,6 +12,8 @@ function coor(){
       my_lat = posicao.coords.latitude;
       my_long = posicao.coords.longitude;
 
+      alert("minha latitude é " + my_lat)
+
       //hide_loading();
       // var event = new Event('has_position');
       // document.dispatchEvent(event);

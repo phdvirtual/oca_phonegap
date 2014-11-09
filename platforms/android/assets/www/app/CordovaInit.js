@@ -1,6 +1,7 @@
 var CordovaInit = function() {
 
 	var onDeviceReady = function() {
+    alert(" ondeviceready fui chamado")
 		receivedEvent('deviceready');
 	};
 
@@ -11,6 +12,7 @@ var CordovaInit = function() {
 
 	this.bindEvents = function() {
 		document.addEventListener('deviceready', onDeviceReady, false);
+
 	};
 
 	//If cordova is present, wait for it to initialize, otherwise just try to
@@ -24,4 +26,5 @@ var CordovaInit = function() {
 
 $(function() {
 	new CordovaInit();
+  alert("cordova init")
 });

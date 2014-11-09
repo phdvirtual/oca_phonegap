@@ -2,7 +2,8 @@ function mapa(locations) {
     var image2 = "img/eu.png";
     var image = "img/icone.png";
     var image_distribuidor = "img/distribuidor.png";
-    var image_revendedor = "img/revendedor.png";
+    var image_lanchar = "img/tigela.png";
+    var image_conveniencia = "img/conveniencias.png";
     var marker, i;
 
     var options = {
@@ -42,8 +43,10 @@ function mapa(locations) {
 
       if (locations[i]['category_id'] == '1') {
         current_image = image_distribuidor
+      } else if (locations[i]['category_id'] == '2') {
+        current_image = image_lanchar
       } else {
-        current_image = image_revendedor
+        current_image = image_conveniencia
       };
 
       marker = new google.maps.Marker({
