@@ -34,6 +34,9 @@ body#mapa {
   display: block;
   height: 50px;
 }
+.f-dropdown li a {
+  padding: 1.5rem;
+}
 #menu-drop img {
   width: 100%;
   position: relative;

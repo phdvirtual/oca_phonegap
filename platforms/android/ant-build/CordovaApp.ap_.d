@@ -120,7 +120,9 @@
 /Users/chelogui/workspace/phdvirtual/agosto/oca_phonegap/platforms/android/assets/www/img/phd.jpg \
 /Users/chelogui/workspace/phdvirtual/agosto/oca_phonegap/platforms/android/assets/www/img/revendedor.png \
 /Users/chelogui/workspace/phdvirtual/agosto/oca_phonegap/platforms/android/assets/www/img/revender.png \
+/Users/chelogui/workspace/phdvirtual/agosto/oca_phonegap/platforms/android/assets/www/img/tigela.jpg \
 /Users/chelogui/workspace/phdvirtual/agosto/oca_phonegap/platforms/android/assets/www/img/tigela.png \
+/Users/chelogui/workspace/phdvirtual/agosto/oca_phonegap/platforms/android/assets/www/img/tigela3.png \
 /Users/chelogui/workspace/phdvirtual/agosto/oca_phonegap/platforms/android/assets/www/js/foundation \
 /Users/chelogui/workspace/phdvirtual/agosto/oca_phonegap/platforms/android/assets/www/js/foundation.min.js \
 /Users/chelogui/workspace/phdvirtual/agosto/oca_phonegap/platforms/android/assets/www/js/get_distance.js \
