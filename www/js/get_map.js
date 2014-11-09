@@ -2,7 +2,7 @@ function mapa(locations) {
     var image2 = "img/eu.png";
     var image = "img/icone.png";
     var image_distribuidor = "img/distribuidor.png";
-    var image_lanchar = "img/tigela.png";
+    var image_lanchar = "img/tigela3.png";
     var image_conveniencia = "img/conveniencias.png";
     var marker, i;
 

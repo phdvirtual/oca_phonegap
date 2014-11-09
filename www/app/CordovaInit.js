@@ -6,7 +6,7 @@ var CordovaInit = function() {
 
 	var receivedEvent = function() {
 		angular.bootstrap($('body'), ['AppOca']);
-    //$(document).foundation();
+    $(document).foundation();
 	};
 
 	this.bindEvents = function() {
