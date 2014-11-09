@@ -2,7 +2,7 @@
 // get position and dispatch event has_position
 function coor(){
 
-  var cordenadas = navigator.geolocation.getCurrentPosition(
+  var cordenadas = navigator.geolocation.watchPosition(
     function(posicao) {
 
 
@@ -24,4 +24,4 @@ function coor(){
   )
 };
 
-coor();
+//coor();
